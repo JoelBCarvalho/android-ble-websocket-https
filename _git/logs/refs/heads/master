@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 b31172f627c4613fc73d9cf37e99dd07411be8b9 Joel Carvalho <joelbcarvalho@gmail.com> 1523578606 +0100	clone: from https://github.com/nkzawa/socket.io-android-chat.git
+b31172f627c4613fc73d9cf37e99dd07411be8b9 cbb6613655a51df6d9b15691c82170d74ce8c8cc Joel Carvalho <joelbcarvalho@gmail.com> 1523636499 +0100	commit: problem with socket connection, goingo to refactor
+cbb6613655a51df6d9b15691c82170d74ce8c8cc a9b14724487f1bebadee08ddf8dfee4a4dfffdd9 Joel Carvalho <joelbcarvalho@gmail.com> 1523636503 +0100	commit: problem with socket connection, goingo to refactor
+a9b14724487f1bebadee08ddf8dfee4a4dfffdd9 04bb61c1c10ba9b5ffda47f176840c2cc62b0e7a Joel Carvalho <joelbcarvalho@gmail.com> 1523675527 +0100	commit: bluetooth apk through websocket into https node server
