@@ -7,7 +7,9 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
+import android.bluetooth.le.ScanFilter;
 import android.bluetooth.le.ScanResult;
+import android.bluetooth.le.ScanSettings;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -16,6 +18,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.ParcelUuid;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,6 +27,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -43,8 +47,14 @@ import org.json.JSONObject;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -60,6 +70,7 @@ public class MainFragment extends Fragment {
     private static final int REQUEST_LOGIN = 0;
 
     private static final int TYPING_TIMER_LENGTH = 600;
+    public static final int RSSI_MAX_VALUE = 999;
 
     private RecyclerView mMessagesView;
     private EditText mInputMessageView;
@@ -82,6 +93,37 @@ public class MainFragment extends Fragment {
     private final static int REQUEST_ENABLE_BT = 1;
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
     private static final int MANUFACTURER_SPECIFIC_DATA = 0XFF;
+
+    ArrayList<String> allowedDevices = new ArrayList<String>();
+
+    private static int COUNTER_TO_REFRESH = 2;
+    private int closestValue = 999;
+    private String closestDevice = "";
+    long startTime = 0;
+    long endTime = 0;
+
+
+    //total sum, counter, avg
+    Map<String, Triplet<Integer,Integer,Integer>> averageRssi = new HashMap<>();
+    Map<String, Triplet<Integer,Integer, String>> deviceCalibration = new HashMap<>();
+
+    public void setDeviceCalibration() {
+        this.deviceCalibration.put("C3:EE:8A:25:95:BE", new Triplet(1, 77, "yellow"));//yellow
+        this.deviceCalibration.put("D6:2E:68:99:5A:23", new Triplet(1, 67, "orange"));//orange
+        this.deviceCalibration.put("F0:FF:9A:76:F2:52", new Triplet(1, 64, "pink"));//pink
+        this.deviceCalibration.put("EA:93:6D:E3:D6:18", new Triplet(1, 64, "green"));//green
+
+    }
+
+    public void setAllowedDevices() {
+        this.allowedDevices.add("E3:EF:56:0C:C0:37");
+        this.allowedDevices.add("FF:01:16:F0:08:9B");
+        this.allowedDevices.add("E6:40:DC:44:5C:9D");
+    }
+
+    public ArrayList<String> getAllowedDevices() {
+        return allowedDevices;
+    }
 
     public MainFragment() {
         super();
@@ -121,6 +163,27 @@ public class MainFragment extends Fragment {
         mSocket.connect();
 
         startSignIn();
+
+        final Handler h = new Handler();
+        h.postDelayed(new Runnable()
+        {
+            private long time = 0;
+
+            @Override
+            public void run()
+            {
+                // do stuff then
+                // can call h again after work!
+                time += 1000;
+                //Log.d("TimerExample", "Going for... " + time);
+
+                refreshBeacons();
+                //attemptSend("ble", closestDevice);
+                //closestValue = 999;
+
+                h.postDelayed(this, 500);
+            }
+        }, 500); // 1 second delay (takes millis)
     }
 
     @Override
@@ -149,6 +212,8 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setAllowedDevices();
+        setDeviceCalibration();
 
         startScanningButton = (Button) view.findViewById(R.id.StartScanButton);
         startScanningButton.setOnClickListener(new View.OnClickListener() {
@@ -168,13 +233,22 @@ public class MainFragment extends Fragment {
         btManager = (BluetoothManager)getActivity().getSystemService(Context.BLUETOOTH_SERVICE);
         btAdapter = btManager.getAdapter();
         btScanner = btAdapter.getBluetoothLeScanner();
-
-
         if (btAdapter != null && !btAdapter.isEnabled()) {
             Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableIntent,REQUEST_ENABLE_BT);
         }
 
+        int permissionCheck = ContextCompat.checkSelfPermission(getActivity().getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION);
+        if (permissionCheck != PackageManager.PERMISSION_GRANTED){
+            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)){
+                Toast.makeText(getActivity(), "The permission to get BLE location data is required", Toast.LENGTH_SHORT).show();
+            }else{
+                requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+            }
+        }else{
+            Toast.makeText(getActivity(), "Location permissions already granted", Toast.LENGTH_SHORT).show();
+        }
+/*
         // Make sure we have access coarse location enabled, if not, prompt the user to enable it
         if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity().getApplicationContext());
@@ -188,7 +262,7 @@ public class MainFragment extends Fragment {
                 }
             });
             builder.show();
-        }
+        }*/
 
         mMessagesView = (RecyclerView) view.findViewById(R.id.messages);
         mMessagesView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -539,19 +613,161 @@ public class MainFragment extends Fragment {
     private ScanCallback leScanCallback = new ScanCallback() {
         @Override
         public void onScanResult(int callbackType, ScanResult result) {
-            if(result.getDevice().getAddress().equalsIgnoreCase("e3:ef:56:0C:c0:37")) {
-                String isBounded = result.getDevice().getBondState() != 10 ? "Yes" : "No";
-
-                String device = " Device Name: " + result.getDevice().getName() + "\n" +
-                        " Rssi: " + result.getRssi() + "\n" +
-                        " Address: " + result.getDevice().getAddress() + "\n" +
-                        " Bounded: " + isBounded + "\n" +
-                        " Type: " + result.getDevice().getType() + "\n" +
-                        " Services: " + getServiceName(result) + "\n";
-                attemptSend("ble", device);
-            }
+            //if(result.getDevice().getAddress().equalsIgnoreCase("e3:ef:56:0C:c0:37")) {
+            //if(getAllowedDevices().contains(result.getDevice().getAddress())) {
+            //if(result.getDevice().getName() != null && result.getDevice().getName().startsWith("Puck")) {
+            updateDevicesRssi(result.getDevice().getAddress(), result.getRssi());
+            //String isBounded = result.getDevice().getBondState() != 10 ? "Yes" : "No";
+            //}
+            /*String closestDevice = result.getDevice().getName() + ";" +
+                    averageRssi.get(result.getDevice().getAddress()).third + ";" +
+                    result.getRssi() + ";" +
+                    result.getDevice().getAddress() + ";" +
+                    isBounded + ";" +
+                    result.getDevice().getType() + ";" +
+                    getServiceName(result) + "\n";
+            attemptSend("ble", closestDevice);*/
+            //checkRefreshStatus();
         }
     };
+
+    private boolean checkRefreshStatus() {
+        //if all value collected and have been at least 5 then flag to refresh
+        boolean refreshNow = true;
+
+        if(averageRssi.size() < 3) {
+            return !refreshNow;
+        }
+
+        //if all beacons were registered at least X times
+        /*for(String address : averageRssi.keySet()){
+            if(averageRssi.get(address).second < COUNTER_TO_REFRESH) {
+                refreshNow = false;
+                break;
+            }
+        }*/
+        //if any beacon was registeres at least X times
+        for(String address : averageRssi.keySet()){
+            if(averageRssi.get(address).second < COUNTER_TO_REFRESH) {
+                refreshNow = false;
+                break;
+            }
+        }
+        //avoid old values noise by restarting
+        if(refreshNow) {
+            refreshBeacons();
+        }
+
+        return refreshNow;
+    }
+
+    private void refreshBeacons() {
+        String device = "";
+        Integer rssiValue = RSSI_MAX_VALUE;
+        double acum_rssi = 0;
+        List<Long> values = new ArrayList<>();
+        int counter = 0;
+        if(averageRssi.size()>3) {
+            Map<String, Triplet<Integer,Integer,Integer>> sortedMapDesc = sortByComparator(averageRssi, true);
+
+            for (String address : sortedMapDesc.keySet()) {
+                Triplet<Integer, Integer, Integer> value = sortedMapDesc.get(address);
+                Integer stableAvgRssi = value.third;
+                counter++;
+
+                int meterRef = 70;
+                String color = "";
+                if(deviceCalibration.get(address) != null) {
+                    meterRef = deviceCalibration.get(address).second;
+                    color = deviceCalibration.get(address).third;
+                } else {
+                    meterRef = 1;
+                }
+                double distMeters = Math.pow(2, ((double) (-stableAvgRssi + meterRef) / -6));
+                acum_rssi = acum_rssi + Math.round(distMeters);
+                values.add(Math.round(distMeters));
+                device = address + ";" + stableAvgRssi + ";" + Math.round(distMeters) + ";" + color;
+                rssiValue = stableAvgRssi;
+
+                attemptSend("ble", device + ";\n");
+
+                /*
+                if (stableAvgRssi < RSSI_MAX_VALUE ) {
+                    closestDevice = device + ";!\n";
+                    closestValue = rssiValue;
+                    attemptSend("ble", closestDevice + ";!\n");
+                } else {f
+                }*/
+
+                //Triplet<Integer, Integer, Integer> refreshedValue = new Triplet<>(stableAvgRssi, 1, stableAvgRssi);
+                //averageRssi.put(address, refreshedValue);
+            }
+
+            attemptSend("mean", (acum_rssi/counter) + "");
+            attemptSend("median", median(values)+"");
+            attemptSend("mode", mode(values)+"");
+
+            averageRssi.clear();
+        }
+    }
+
+    // the array double[] m MUST BE SORTED
+    public static double median(List<Long> m) {
+        int middle = m.size()/2;
+        if (m.size()%2 == 1) {
+            return m.get(middle);
+        } else {
+            return m.get(middle-1) + m.get(middle) / 2.0;
+        }
+    }
+
+    public static double mode(List<Long> a) {
+        long maxValue =0, maxCount = 0;
+
+        for (int i = 0; i < a.size(); ++i) {
+            int count = 0;
+            for (int j = 0; j < a.size(); ++j) {
+                if (a.get(j) == a.get(i)) ++count;
+            }
+            if (count > maxCount) {
+                maxCount = count;
+                maxValue = a.get(i);
+            }
+        }
+
+        return maxValue;
+    }
+
+    public void updateDevicesRssi(String address, int newRssi) {
+        Triplet<Integer,Integer, Integer> getOldValue = averageRssi.get(address);
+        Integer positiveNewRssi = Math.abs(newRssi);
+        if(getOldValue == null) {
+            averageRssi.put(address, new Triplet(positiveNewRssi, 1, positiveNewRssi));
+        } else {
+            Integer oldTotalSum = getOldValue.first;
+            Integer oldCounter = getOldValue.second;
+            Integer oldAvgRssi = getOldValue.third;
+
+            Integer newTotalSum = oldTotalSum + positiveNewRssi;
+            Integer newCounter = oldCounter+1;
+            Integer newAvgRssi = Integer.valueOf(Math.floorDiv(newTotalSum, newCounter));
+
+            Triplet<Integer, Integer, Integer> newValue = new Triplet(newTotalSum, oldCounter+1, newAvgRssi);
+
+            averageRssi.put(address, newValue);
+        }
+
+        /*
+        int newRssiAbs = Math.abs(newRssi);
+        if(closestValue > newRssiAbs){
+            closestValue = newRssiAbs;
+        }
+
+        double distMeters = Math.pow(2, (closestValue-74)/6);
+        String closestDevice = "min dist: " + Math.round(distMeters)  + closestValue + "\n";
+        attemptSend("ble", closestDevice);*/
+    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            String permissions[], int[] grantResults) {
@@ -669,7 +885,12 @@ public class MainFragment extends Fragment {
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
-                btScanner.startScan(leScanCallback);
+                ScanSettings settings = new ScanSettings.Builder().setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY).build();
+                List<ScanFilter> filters = createScanFilters();
+
+                btScanner.startScan(filters, settings, leScanCallback);
+
+                //btScanner.startScan(leScanCallback);
             }
         });
     }
@@ -678,6 +899,8 @@ public class MainFragment extends Fragment {
         System.out.println("stopping scanning");
         startScanningButton.setVisibility(View.VISIBLE);
         stopScanningButton.setVisibility(View.INVISIBLE);
+        averageRssi.clear();
+        closestDevice = "";
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
@@ -686,5 +909,78 @@ public class MainFragment extends Fragment {
         });
     }
 
+    private List<ScanFilter> createScanFilters() {
+        ScanFilter.Builder builder = new ScanFilter.Builder();
+        ArrayList<ScanFilter> scanFilters = new ArrayList<>();
+        /*UUID asServiceId = UUID.fromString("6e400001-b5a3-f393-e0a9-e50e24dcca9e");
+        builder.setServiceUuid(new ParcelUuid(asServiceId));
+        scanFilters.add(builder.build());
+*/
+        ScanFilter.Builder builder1 = new ScanFilter.Builder();
+        UUID asServiceId1 = UUID.fromString("00001803-494c-4f47-4943-544543480000");
+        builder1.setServiceUuid(new ParcelUuid(asServiceId1));
+        scanFilters.add(builder1.build());
+/*
+        ScanFilter.Builder builder2 = new ScanFilter.Builder();
+        builder2.setDeviceAddress("FF:01:16:F0:08:9B");
+        scanFilters.add(builder2.build());
+
+        ScanFilter.Builder builder3 = new ScanFilter.Builder();
+        builder3.setDeviceAddress("E6:40:DC:44:5C:9D");
+        scanFilters.add(builder3.build());
+*/
+
+        return scanFilters;
+    }
+
+    private static Map<String, Triplet<Integer,Integer,Integer>> sortByComparator(Map<String, Triplet<Integer,Integer,Integer>> unsortMap, final boolean order)
+    {
+
+        List<Map.Entry<String, Triplet<Integer,Integer,Integer>>> list = new LinkedList<Map.Entry<String, Triplet<Integer,Integer,Integer>>>(unsortMap.entrySet());
+
+        // Sorting the list based on values
+        Collections.sort(list, new Comparator<Map.Entry<String, Triplet<Integer,Integer,Integer>>>()
+        {
+            public int compare(Map.Entry<String, Triplet<Integer,Integer,Integer>> o1,
+                               Map.Entry<String, Triplet<Integer,Integer,Integer>> o2)
+            {
+                if (order)
+                {
+                    return o1.getValue().third.compareTo(o2.getValue().third);
+                }
+                else
+                {
+                    return o2.getValue().third.compareTo(o1.getValue().third);
+
+                }
+            }
+        });
+
+        // Maintaining insertion order with the help of LinkedList
+        Map<String, Triplet<Integer,Integer,Integer>> sortedMap = new LinkedHashMap<String, Triplet<Integer,Integer,Integer>>();
+        for (Map.Entry<String, Triplet<Integer,Integer,Integer>> entry : list)
+        {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+
+        return sortedMap;
+    }
+
+    public class Triplet<T, U, V> {
+
+        private final T first;
+        private final U second;
+        private final V third;
+
+        public Triplet(T first, U second, V third) {
+            this.first = first;
+            this.second = second;
+            this.third = third;
+        }
+
+        public T getFirst() { return first; }
+        public U getSecond() { return second; }
+        public V getThird() { return third; }
+    }
 }
 

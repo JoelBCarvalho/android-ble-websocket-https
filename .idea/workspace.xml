@@ -9,7 +9,23 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08495536-92a2-47ef-90d6-b7d8a02bc81a" name="Default" comment="" />
+    <list default="true" id="08495536-92a2-47ef-90d6-b7d8a02bc81a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +57,11 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="0">
               <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,8 +73,8 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,70 +86,77 @@
       <file leaf-file-name="MainFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
+            <state relative-caret-position="170">
+              <caret line="583" column="0" lean-forward="false" selection-start-line="583" selection-start-column="0" selection-end-line="583" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1983#1992#0" expanded="true" />
-                <element signature="e#5064#5191#0" expanded="true" />
-                <element signature="e#5190#5191#0" expanded="true" />
-                <element signature="e#5319#5445#0" expanded="true" />
-                <element signature="e#5444#5445#0" expanded="true" />
-                <element signature="e#6555#6852#0" expanded="true" />
-                <element signature="e#6851#6852#0" expanded="true" />
-                <element signature="e#7222#7571#0" expanded="true" />
-                <element signature="e#7570#7571#0" expanded="true" />
-                <element signature="e#8502#8649#0" expanded="true" />
-                <element signature="e#8648#8649#0" expanded="true" />
-                <element signature="e#9057#9107#0" expanded="true" />
-                <element signature="e#10196#10280#0" expanded="true" />
-                <element signature="e#12529#12530#0" expanded="true" />
-                <element signature="e#12604#12605#0" expanded="true" />
-                <element signature="e#12648#13271#0" expanded="true" />
-                <element signature="e#12774#13253#0" expanded="true" />
-                <element signature="e#13111#13127#0" expanded="true" />
-                <element signature="e#13252#13253#0" expanded="true" />
-                <element signature="e#13270#13271#0" expanded="true" />
-                <element signature="e#13318#13810#0" expanded="true" />
-                <element signature="e#13444#13792#0" expanded="true" />
-                <element signature="e#13713#13732#0" expanded="true" />
-                <element signature="e#13791#13792#0" expanded="true" />
-                <element signature="e#13809#13810#0" expanded="true" />
-                <element signature="e#13859#14318#0" expanded="true" />
-                <element signature="e#13985#14300#0" expanded="true" />
-                <element signature="e#14218#14240#0" expanded="true" />
-                <element signature="e#14299#14300#0" expanded="true" />
-                <element signature="e#14317#14318#0" expanded="true" />
-                <element signature="e#14365#15158#0" expanded="true" />
-                <element signature="e#14497#15140#0" expanded="true" />
-                <element signature="e#15139#15140#0" expanded="true" />
-                <element signature="e#15157#15158#0" expanded="true" />
-                <element signature="e#15205#16044#0" expanded="true" />
-                <element signature="e#15337#16026#0" expanded="true" />
-                <element signature="e#15878#15942#0" expanded="true" />
-                <element signature="e#16025#16026#0" expanded="true" />
-                <element signature="e#16043#16044#0" expanded="true" />
-                <element signature="e#16089#16970#0" expanded="true" />
-                <element signature="e#16221#16952#0" expanded="true" />
-                <element signature="e#16762#16824#0" expanded="true" />
-                <element signature="e#16951#16952#0" expanded="true" />
-                <element signature="e#16969#16970#0" expanded="true" />
-                <element signature="e#17013#17654#0" expanded="true" />
-                <element signature="e#17145#17636#0" expanded="true" />
-                <element signature="e#17635#17636#0" expanded="true" />
-                <element signature="e#17653#17654#0" expanded="true" />
-                <element signature="e#17701#18345#0" expanded="true" />
-                <element signature="e#17833#18327#0" expanded="true" />
-                <element signature="e#18326#18327#0" expanded="true" />
-                <element signature="e#18344#18345#0" expanded="true" />
-                <element signature="e#18387#18570#0" expanded="true" />
-                <element signature="e#18569#18570#0" expanded="true" />
-                <element signature="e#18655#19453#0" expanded="true" />
-                <element signature="e#19452#19453#0" expanded="true" />
-                <element signature="e#24550#24697#0" expanded="true" />
-                <element signature="e#24696#24697#0" expanded="true" />
-                <element signature="e#24930#25076#0" expanded="true" />
-                <element signature="e#25075#25076#0" expanded="true" />
+                <element signature="e#2356#2365#0" expanded="true" />
+                <element signature="e#3064#3072#0" expanded="true" />
+                <element signature="e#4125#4126#0" expanded="true" />
+                <element signature="e#4162#4163#0" expanded="true" />
+                <element signature="e#7251#7378#0" expanded="true" />
+                <element signature="e#7377#7378#0" expanded="true" />
+                <element signature="e#7506#7632#0" expanded="true" />
+                <element signature="e#7631#7632#0" expanded="true" />
+                <element signature="e#10188#10537#0" expanded="true" />
+                <element signature="e#10536#10537#0" expanded="true" />
+                <element signature="e#11468#11615#0" expanded="true" />
+                <element signature="e#11614#11615#0" expanded="true" />
+                <element signature="e#12023#12073#0" expanded="true" />
+                <element signature="e#13162#13246#0" expanded="true" />
+                <element signature="e#15495#15496#0" expanded="true" />
+                <element signature="e#15570#15571#0" expanded="true" />
+                <element signature="e#15614#16237#0" expanded="true" />
+                <element signature="e#15740#16219#0" expanded="true" />
+                <element signature="e#16077#16093#0" expanded="true" />
+                <element signature="e#16218#16219#0" expanded="true" />
+                <element signature="e#16236#16237#0" expanded="true" />
+                <element signature="e#16284#16776#0" expanded="true" />
+                <element signature="e#16410#16758#0" expanded="true" />
+                <element signature="e#16679#16698#0" expanded="true" />
+                <element signature="e#16757#16758#0" expanded="true" />
+                <element signature="e#16775#16776#0" expanded="true" />
+                <element signature="e#16825#17284#0" expanded="true" />
+                <element signature="e#16951#17266#0" expanded="true" />
+                <element signature="e#17184#17206#0" expanded="true" />
+                <element signature="e#17265#17266#0" expanded="true" />
+                <element signature="e#17283#17284#0" expanded="true" />
+                <element signature="e#17331#18124#0" expanded="true" />
+                <element signature="e#17463#18106#0" expanded="true" />
+                <element signature="e#18105#18106#0" expanded="true" />
+                <element signature="e#18123#18124#0" expanded="true" />
+                <element signature="e#18171#19010#0" expanded="true" />
+                <element signature="e#18303#18992#0" expanded="true" />
+                <element signature="e#18844#18908#0" expanded="true" />
+                <element signature="e#18991#18992#0" expanded="true" />
+                <element signature="e#19009#19010#0" expanded="true" />
+                <element signature="e#19055#19936#0" expanded="true" />
+                <element signature="e#19187#19918#0" expanded="true" />
+                <element signature="e#19728#19790#0" expanded="true" />
+                <element signature="e#19917#19918#0" expanded="true" />
+                <element signature="e#19935#19936#0" expanded="true" />
+                <element signature="e#19979#20620#0" expanded="true" />
+                <element signature="e#20111#20602#0" expanded="true" />
+                <element signature="e#20601#20602#0" expanded="true" />
+                <element signature="e#20619#20620#0" expanded="true" />
+                <element signature="e#20667#21311#0" expanded="true" />
+                <element signature="e#20799#21293#0" expanded="true" />
+                <element signature="e#21292#21293#0" expanded="true" />
+                <element signature="e#21310#21311#0" expanded="true" />
+                <element signature="e#21353#21536#0" expanded="true" />
+                <element signature="e#21535#21536#0" expanded="true" />
+                <element signature="e#21621#22707#0" expanded="true" />
+                <element signature="e#22706#22707#0" expanded="true" />
+                <element signature="method#onRequestPermissionsResult#0;class#MainFragment#0" expanded="false" />
+                <element signature="method#getServiceName#0;class#MainFragment#0" expanded="false" />
+                <element signature="e#32688#33099#0" expanded="true" />
+                <element signature="e#33098#33099#0" expanded="true" />
+                <element signature="e#33389#33535#0" expanded="true" />
+                <element signature="e#33534#33535#0" expanded="true" />
+                <element signature="e#34792#34845#0" expanded="true" />
+                <element signature="e#34945#35515#0" expanded="true" />
+                <element signature="e#35514#35515#0" expanded="true" />
+                <element signature="e#35669#35711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,25 +164,23 @@
       </file>
       <file leaf-file-name="fragment_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="646">
               <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="44" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ChatApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/ChatApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="238">
               <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
-                <element signature="e#1871#2275#0" expanded="true" />
-                <element signature="e#2274#2275#0" expanded="true" />
                 <element signature="e#3104#3105#0" expanded="true" />
                 <element signature="e#3134#3135#0" expanded="true" />
               </folding>
@@ -170,8 +191,8 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+            <state relative-caret-position="68">
+              <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -181,11 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>IO.socket</find>
-      <find>startScanning</find>
-      <find>androidTestApi</find>
-      <find>testCompile</find>
-      <find>onTextChanged</find>
       <find>mInputMessageView</find>
       <find>mMessages</find>
       <find>addParticipantsLog</find>
@@ -205,7 +221,21 @@
       <find>Messa</find>
       <find>message_input</find>
       <find>send_button</find>
+      <find>BluetoothLeScanner</find>
+      <find>btScanner</find>
+      <find>leScanCallback</find>
+      <find>startScanning</find>
+      <find>COUNTER_TO_REFRESH</find>
+      <find>roun</find>
+      <find>updateDevicesRssi</find>
+      <find>averageRssi.clear</find>
+      <find>String, Integer</find>
+      <find>setAllowedDevices</find>
+      <find>deviceCalibration</find>
     </findStrings>
+    <replaceStrings>
+      <replace>String, Triplet&lt;Integer,Integer,Integer&gt;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2247,18 +2277,18 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/ChatApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1423" />
-    <option name="y" value="-4" />
-    <option name="width" value="1309" />
-    <option name="height" value="772" />
+    <option name="x" value="56" />
+    <option name="y" value="-782" />
+    <option name="width" value="1311" />
+    <option name="height" value="783" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -2275,33 +2305,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="socket.io-android-chat" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="socket.io-android-chat" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="socket.io-android-chat" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="socket.io-android-chat" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidchat" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
             <path>
               <item name="socket.io-android-chat" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -2310,14 +2316,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="device.picker.selection" value="97c896a9" />
+    <property name="device.picker.selection" value="2017100978" />
     <property name="android.profiler.active" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
@@ -2518,72 +2528,72 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1423" y="-4" width="1309" height="772" extended-state="6" />
+    <frame x="56" y="-782" width="1311" height="783" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3141946" sideWeight="0.50276244" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3141946" sideWeight="0.49723756" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5502392" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54864436" sideWeight="0.50434095" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54864436" sideWeight="0.49565902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14443567" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14443567" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940805" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3141946" sideWeight="0.49723756" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3141946" sideWeight="0.50276244" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54864436" sideWeight="0.50434095" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3141946" sideWeight="0.49723756" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5502392" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54864436" sideWeight="0.49565902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14443567" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14443567" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2592,12 +2602,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>result.getDevice().getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>mSocket.connect()</expression-string>
         <language-id>JAVA</language-id>
@@ -2621,6 +2636,131 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/ChatApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#3104#3105#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2356#2365#0" expanded="true" />
+            <element signature="e#3064#3072#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4162#4163#0" expanded="true" />
+            <element signature="e#7251#7378#0" expanded="true" />
+            <element signature="e#7377#7378#0" expanded="true" />
+            <element signature="e#7506#7632#0" expanded="true" />
+            <element signature="e#7631#7632#0" expanded="true" />
+            <element signature="e#10188#10537#0" expanded="true" />
+            <element signature="e#10536#10537#0" expanded="true" />
+            <element signature="e#11468#11615#0" expanded="true" />
+            <element signature="e#11614#11615#0" expanded="true" />
+            <element signature="e#12023#12073#0" expanded="true" />
+            <element signature="e#13162#13246#0" expanded="true" />
+            <element signature="e#15495#15496#0" expanded="true" />
+            <element signature="e#15570#15571#0" expanded="true" />
+            <element signature="e#15614#16237#0" expanded="true" />
+            <element signature="e#15740#16219#0" expanded="true" />
+            <element signature="e#16077#16093#0" expanded="true" />
+            <element signature="e#16218#16219#0" expanded="true" />
+            <element signature="e#16236#16237#0" expanded="true" />
+            <element signature="e#16284#16776#0" expanded="true" />
+            <element signature="e#16410#16758#0" expanded="true" />
+            <element signature="e#16679#16698#0" expanded="true" />
+            <element signature="e#16757#16758#0" expanded="true" />
+            <element signature="e#16775#16776#0" expanded="true" />
+            <element signature="e#16825#17284#0" expanded="true" />
+            <element signature="e#16951#17266#0" expanded="true" />
+            <element signature="e#17184#17206#0" expanded="true" />
+            <element signature="e#17265#17266#0" expanded="true" />
+            <element signature="e#17283#17284#0" expanded="true" />
+            <element signature="e#17331#18124#0" expanded="true" />
+            <element signature="e#17463#18106#0" expanded="true" />
+            <element signature="e#18105#18106#0" expanded="true" />
+            <element signature="e#18123#18124#0" expanded="true" />
+            <element signature="e#18171#19010#0" expanded="true" />
+            <element signature="e#18303#18992#0" expanded="true" />
+            <element signature="e#18844#18908#0" expanded="true" />
+            <element signature="e#18991#18992#0" expanded="true" />
+            <element signature="e#19009#19010#0" expanded="true" />
+            <element signature="e#19055#19936#0" expanded="true" />
+            <element signature="e#19187#19918#0" expanded="true" />
+            <element signature="e#19728#19790#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19935#19936#0" expanded="true" />
+            <element signature="e#19979#20620#0" expanded="true" />
+            <element signature="e#20111#20602#0" expanded="true" />
+            <element signature="e#20601#20602#0" expanded="true" />
+            <element signature="e#20619#20620#0" expanded="true" />
+            <element signature="e#20667#21311#0" expanded="true" />
+            <element signature="e#20799#21293#0" expanded="true" />
+            <element signature="e#21292#21293#0" expanded="true" />
+            <element signature="e#21310#21311#0" expanded="true" />
+            <element signature="e#21353#21536#0" expanded="true" />
+            <element signature="e#21535#21536#0" expanded="true" />
+            <element signature="e#21621#22707#0" expanded="true" />
+            <element signature="e#22706#22707#0" expanded="true" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainFragment#0" expanded="false" />
+            <element signature="method#getServiceName#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#32688#33099#0" expanded="true" />
+            <element signature="e#33098#33099#0" expanded="true" />
+            <element signature="e#33389#33535#0" expanded="true" />
+            <element signature="e#33534#33535#0" expanded="true" />
+            <element signature="e#34792#34845#0" expanded="true" />
+            <element signature="e#34945#35515#0" expanded="true" />
+            <element signature="e#35514#35515#0" expanded="true" />
+            <element signature="e#35669#35711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -2653,14 +2793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/25.0.1/96d4084dd828583ae8e98b02b9442f28b5363050/support-fragment-25.0.1-sources.jar!/android/support/v4/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -2669,10 +2801,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-25/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="453" column="28" lean-forward="false" selection-start-line="453" selection-start-column="28" selection-end-line="453" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/ChatApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#3104#3105#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2682,120 +2861,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/ChatApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="e#1871#2275#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#3104#3105#0" expanded="true" />
-            <element signature="e#3134#3135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-25/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="453" column="28" lean-forward="false" selection-start-line="453" selection-start-column="28" selection-end-line="453" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/MainFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
+        <state relative-caret-position="170">
+          <caret line="583" column="0" lean-forward="false" selection-start-line="583" selection-start-column="0" selection-end-line="583" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1983#1992#0" expanded="true" />
-            <element signature="e#5064#5191#0" expanded="true" />
-            <element signature="e#5190#5191#0" expanded="true" />
-            <element signature="e#5319#5445#0" expanded="true" />
-            <element signature="e#5444#5445#0" expanded="true" />
-            <element signature="e#6555#6852#0" expanded="true" />
-            <element signature="e#6851#6852#0" expanded="true" />
-            <element signature="e#7222#7571#0" expanded="true" />
-            <element signature="e#7570#7571#0" expanded="true" />
-            <element signature="e#8502#8649#0" expanded="true" />
-            <element signature="e#8648#8649#0" expanded="true" />
-            <element signature="e#9057#9107#0" expanded="true" />
-            <element signature="e#10196#10280#0" expanded="true" />
-            <element signature="e#12529#12530#0" expanded="true" />
-            <element signature="e#12604#12605#0" expanded="true" />
-            <element signature="e#12648#13271#0" expanded="true" />
-            <element signature="e#12774#13253#0" expanded="true" />
-            <element signature="e#13111#13127#0" expanded="true" />
-            <element signature="e#13252#13253#0" expanded="true" />
-            <element signature="e#13270#13271#0" expanded="true" />
-            <element signature="e#13318#13810#0" expanded="true" />
-            <element signature="e#13444#13792#0" expanded="true" />
-            <element signature="e#13713#13732#0" expanded="true" />
-            <element signature="e#13791#13792#0" expanded="true" />
-            <element signature="e#13809#13810#0" expanded="true" />
-            <element signature="e#13859#14318#0" expanded="true" />
-            <element signature="e#13985#14300#0" expanded="true" />
-            <element signature="e#14218#14240#0" expanded="true" />
-            <element signature="e#14299#14300#0" expanded="true" />
-            <element signature="e#14317#14318#0" expanded="true" />
-            <element signature="e#14365#15158#0" expanded="true" />
-            <element signature="e#14497#15140#0" expanded="true" />
-            <element signature="e#15139#15140#0" expanded="true" />
-            <element signature="e#15157#15158#0" expanded="true" />
-            <element signature="e#15205#16044#0" expanded="true" />
-            <element signature="e#15337#16026#0" expanded="true" />
-            <element signature="e#15878#15942#0" expanded="true" />
-            <element signature="e#16025#16026#0" expanded="true" />
-            <element signature="e#16043#16044#0" expanded="true" />
-            <element signature="e#16089#16970#0" expanded="true" />
-            <element signature="e#16221#16952#0" expanded="true" />
-            <element signature="e#16762#16824#0" expanded="true" />
-            <element signature="e#16951#16952#0" expanded="true" />
-            <element signature="e#16969#16970#0" expanded="true" />
-            <element signature="e#17013#17654#0" expanded="true" />
-            <element signature="e#17145#17636#0" expanded="true" />
-            <element signature="e#17635#17636#0" expanded="true" />
-            <element signature="e#17653#17654#0" expanded="true" />
-            <element signature="e#17701#18345#0" expanded="true" />
-            <element signature="e#17833#18327#0" expanded="true" />
-            <element signature="e#18326#18327#0" expanded="true" />
-            <element signature="e#18344#18345#0" expanded="true" />
-            <element signature="e#18387#18570#0" expanded="true" />
-            <element signature="e#18569#18570#0" expanded="true" />
-            <element signature="e#18655#19453#0" expanded="true" />
-            <element signature="e#19452#19453#0" expanded="true" />
-            <element signature="e#24550#24697#0" expanded="true" />
-            <element signature="e#24696#24697#0" expanded="true" />
-            <element signature="e#24930#25076#0" expanded="true" />
-            <element signature="e#25075#25076#0" expanded="true" />
+            <element signature="e#2356#2365#0" expanded="true" />
+            <element signature="e#3064#3072#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4162#4163#0" expanded="true" />
+            <element signature="e#7251#7378#0" expanded="true" />
+            <element signature="e#7377#7378#0" expanded="true" />
+            <element signature="e#7506#7632#0" expanded="true" />
+            <element signature="e#7631#7632#0" expanded="true" />
+            <element signature="e#10188#10537#0" expanded="true" />
+            <element signature="e#10536#10537#0" expanded="true" />
+            <element signature="e#11468#11615#0" expanded="true" />
+            <element signature="e#11614#11615#0" expanded="true" />
+            <element signature="e#12023#12073#0" expanded="true" />
+            <element signature="e#13162#13246#0" expanded="true" />
+            <element signature="e#15495#15496#0" expanded="true" />
+            <element signature="e#15570#15571#0" expanded="true" />
+            <element signature="e#15614#16237#0" expanded="true" />
+            <element signature="e#15740#16219#0" expanded="true" />
+            <element signature="e#16077#16093#0" expanded="true" />
+            <element signature="e#16218#16219#0" expanded="true" />
+            <element signature="e#16236#16237#0" expanded="true" />
+            <element signature="e#16284#16776#0" expanded="true" />
+            <element signature="e#16410#16758#0" expanded="true" />
+            <element signature="e#16679#16698#0" expanded="true" />
+            <element signature="e#16757#16758#0" expanded="true" />
+            <element signature="e#16775#16776#0" expanded="true" />
+            <element signature="e#16825#17284#0" expanded="true" />
+            <element signature="e#16951#17266#0" expanded="true" />
+            <element signature="e#17184#17206#0" expanded="true" />
+            <element signature="e#17265#17266#0" expanded="true" />
+            <element signature="e#17283#17284#0" expanded="true" />
+            <element signature="e#17331#18124#0" expanded="true" />
+            <element signature="e#17463#18106#0" expanded="true" />
+            <element signature="e#18105#18106#0" expanded="true" />
+            <element signature="e#18123#18124#0" expanded="true" />
+            <element signature="e#18171#19010#0" expanded="true" />
+            <element signature="e#18303#18992#0" expanded="true" />
+            <element signature="e#18844#18908#0" expanded="true" />
+            <element signature="e#18991#18992#0" expanded="true" />
+            <element signature="e#19009#19010#0" expanded="true" />
+            <element signature="e#19055#19936#0" expanded="true" />
+            <element signature="e#19187#19918#0" expanded="true" />
+            <element signature="e#19728#19790#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19935#19936#0" expanded="true" />
+            <element signature="e#19979#20620#0" expanded="true" />
+            <element signature="e#20111#20602#0" expanded="true" />
+            <element signature="e#20601#20602#0" expanded="true" />
+            <element signature="e#20619#20620#0" expanded="true" />
+            <element signature="e#20667#21311#0" expanded="true" />
+            <element signature="e#20799#21293#0" expanded="true" />
+            <element signature="e#21292#21293#0" expanded="true" />
+            <element signature="e#21310#21311#0" expanded="true" />
+            <element signature="e#21353#21536#0" expanded="true" />
+            <element signature="e#21535#21536#0" expanded="true" />
+            <element signature="e#21621#22707#0" expanded="true" />
+            <element signature="e#22706#22707#0" expanded="true" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainFragment#0" expanded="false" />
+            <element signature="method#getServiceName#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#32688#33099#0" expanded="true" />
+            <element signature="e#33098#33099#0" expanded="true" />
+            <element signature="e#33389#33535#0" expanded="true" />
+            <element signature="e#33534#33535#0" expanded="true" />
+            <element signature="e#34792#34845#0" expanded="true" />
+            <element signature="e#34945#35515#0" expanded="true" />
+            <element signature="e#35514#35515#0" expanded="true" />
+            <element signature="e#35669#35711#0" expanded="true" />
           </folding>
         </state>
       </provider>
